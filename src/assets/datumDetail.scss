@@ -1,0 +1,70 @@
+@import "color";
+@import "font";
+.datum-detail {
+  width: 1202px;
+  margin:auto;
+  padding: 0 50px 50px;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow: hidden;
+  .d-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 72px;
+  }
+  .d-info {
+    margin-top: 20px;
+    display: flex;
+    color:$mkTextColorSubTitle;
+    font-size: $fontSizeMinText;
+    justify-content: center;
+    .time {
+      margin-left: 39px;
+    }
+    .down {
+      margin-left: 39px;
+    }
+  }
+  .bnclosure {
+    margin-top: 40px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f7f8f9;
+    padding-left: 20px;
+    border-radius: 4px;
+    .file-type {
+      font-weight: bold;
+      font-size: $fontSizeTitle;
+      color:$mkTextColorTitle;
+      margin-right: 10px;
+    }
+    .f-name {
+      font-size: $fontSizeTitle;
+      color:$mkTextColorTitle;
+      margin-right: 10px;
+    }
+    .f-size {
+      font-size: $fontSizeText;
+      color:$mkTextColorSubTitle;
+    }
+    .download {
+      width: 72px;
+      height: 31px;
+      line-height: 31px;
+      background-color: #1b80e3;
+      color:#fff;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      outline: none;
+    }
+  }
+  .d-des {
+    margin-top: 40px;
+    font-size: $fontSizeText;
+    color:#494b4c;
+    line-height: 24px;
+  }
+  .d-richText {
+    margin-top: 40px;
+  }
+}

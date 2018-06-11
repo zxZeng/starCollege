@@ -1,0 +1,78 @@
+@import "color";
+@import "font";
+.course-info {
+  width: 1202px;
+  height: 265px;
+  background-color: #fff;
+  border-radius:6px;
+  margin:auto;
+  overflow: hidden;
+  .img {
+    width: 400px;
+    height: 225px;
+    border-radius: 6px;
+    margin: 20px;
+    overflow: hidden;
+  }
+  .c-info {
+    overflow: hidden;
+    padding-right: 20px;
+    .c-title {
+      font-size: $fontSizeMainTitle;
+      color: $mkTextColorTitle;
+      margin-top: 30px;
+    }
+    .c-des {
+      margin-top: 10px;
+      font-size: $fontSizeText;
+      color: $mkTextColorSubTitle;
+    }
+    .c-time {
+      margin-top: 20px;
+      font-size: $fontSizeMinText;
+    }
+    .c-duration {
+      margin-top: 8px;
+      font-size: $fontSizeMinText;
+    }
+  }
+}
+
+.course-content {
+  width: 1202px;
+  background-color: #fff;
+  margin:auto;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius:6px;
+  .tab-bar {
+    height: 54px;
+    line-height: 54px;
+    font-size:$fontSizeBigTitle;
+    display: flex;
+    .tab-bar-list {
+      color:$mkTextColorSubTitle;
+      padding:0 20px;
+      text-align: center;
+    }
+    .active {
+      color:$mkTextColorTitle;
+      position: relative;
+    }
+    .active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 24px;
+      height: 3px;
+      border-radius: 2px;
+      background-color: $mkColorPrimary;
+    }
+  }
+  .c-richText {
+    margin: 35px 20px 45px;
+  }
+}

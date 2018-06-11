@@ -1,0 +1,56 @@
+@import "color";
+@import "font";
+/* ====================课程列表 start===================== */
+.mk-course {
+  width: 1202px;
+  margin:60px auto 0;
+  .mk-course-head {
+    justify-content: space-between;
+    .course-name {
+      font-size: $fontSizeMainTitle;
+    }
+    .course-more a {
+      color: #494b4c;
+    }
+  }
+  .mk-course-box {
+    margin-top: 9px;
+    .course-item {
+      margin-top: 18px;
+      width:226px;
+      height: 236px;
+      border-radius:6px;
+      background-color: #fff;
+      overflow: hidden;
+      .course-img {
+        height: 127px;
+        width: 236px;
+        overflow: hidden;
+        position: relative;
+        .saw {
+          position: absolute;
+          bottom:3px;
+          left: 5px;
+          color:#fff;
+        }
+      }
+      .course-title {
+        margin:7px 10px 0;
+        font-size: $fontSizeTitle;
+        color:$mkTextColorTitle;
+      }
+      .course-des {
+        margin:7px 10px 0;
+        font-size: $fontSizeMinText;
+        color:$mkTextColorSubTitle;
+      }
+    }
+  }
+  .course-item + .course-item {
+    margin-left: 18px;
+  }
+  .course-item:nth-child(5n+1) {
+    margin-left: 0;
+  }
+}
+/* ====================课程列表 end===================== */

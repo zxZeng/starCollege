@@ -1,0 +1,57 @@
+.datum-detail {
+  width: 1202px;
+  margin: auto;
+  padding: 0 50px 50px;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow: hidden; }
+  .datum-detail .d-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 72px; }
+  .datum-detail .d-info {
+    margin-top: 20px;
+    display: flex;
+    color: #939699;
+    font-size: 13px;
+    justify-content: center; }
+    .datum-detail .d-info .time {
+      margin-left: 39px; }
+    .datum-detail .d-info .down {
+      margin-left: 39px; }
+  .datum-detail .bnclosure {
+    margin-top: 40px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f7f8f9;
+    padding-left: 20px;
+    border-radius: 4px; }
+    .datum-detail .bnclosure .file-type {
+      font-weight: bold;
+      font-size: 16px;
+      color: #494B4C;
+      margin-right: 10px; }
+    .datum-detail .bnclosure .f-name {
+      font-size: 16px;
+      color: #494B4C;
+      margin-right: 10px; }
+    .datum-detail .bnclosure .f-size {
+      font-size: 14px;
+      color: #939699; }
+    .datum-detail .bnclosure .download {
+      width: 72px;
+      height: 31px;
+      background-color: #1b80e3;
+      color: #fff;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      outline: none; }
+  .datum-detail .d-des {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #494b4c;
+    line-height: 24px; }
+  .datum-detail .d-richText {
+    margin-top: 40px; }
+
+/*# sourceMappingURL=datumDetail.css.map */

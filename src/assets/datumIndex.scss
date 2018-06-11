@@ -1,0 +1,60 @@
+@import "color";
+@import "font";
+.pdf {
+  background-color:#f53e3e;}
+.ppt {
+  background-color:#ff9c1b;}
+.excel {
+  background-color:#50c96f;}
+.word {
+  background-color:#2e79f6;}
+.datum-box {
+  width: 1202px;
+  margin:auto;
+  padding:0 34px;
+  border-radius:6px;
+  background-color: #fff;
+  overflow: hidden;
+  .datum-item {
+    height: 140px;
+    overflow: hidden;
+    .datum-title {
+      margin-top: 30px;
+      a {
+        color:$mkTextColorTitle;
+        font-size: $fontSizeBigTitle;
+      }
+      .file-type {
+        display: inline-block;
+        //background-color: red;
+        padding:0 4px;
+        color:#fff;
+        border-radius:3px;
+        margin-right: 5px;
+      }
+    }
+    .datum-content {
+      font-size: $fontSizeMinText;
+      color:$mkTextColorSubTitle;
+      margin-top: 8px;
+    }
+    .datum-info {
+      margin-top: 10px;
+      display: flex;
+      color:$mkTextColorSubTitle;
+      font-size: $fontSizeMinText;
+      .name {
+
+      }
+      .time {
+        margin-left: 39px;
+      }
+      .down {
+        margin-left: 39px;
+      }
+    }
+  }
+  .datum-item + .datum-item {
+    border-top:1px solid #e3e7eb;
+  }
+}

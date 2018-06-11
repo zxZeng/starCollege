@@ -1,0 +1,319 @@
+@import "color";
+@import "font";
+/* ====================课程列表 start===================== */
+.mk-course {
+  width: 1202px;
+  margin:60px auto 0;
+  .mk-course-head {
+    justify-content: space-between;
+    .course-name {
+      font-size: $fontSizeMainTitle;
+    }
+    .course-more a {
+      color: #494b4c;
+    }
+  }
+  .mk-course-box {
+    margin-top: 9px;
+    .course-item {
+      cursor: pointer;
+      margin-top: 18px;
+      width:226px;
+      height: 236px;
+      border-radius:6px;
+      background-color: #fff;
+      overflow: hidden;
+      .course-img {
+        height: 127px;
+        width: 236px;
+        overflow: hidden;
+        position: relative;
+        .saw {
+          position: absolute;
+          bottom:3px;
+          left: 5px;
+          color:#fff;
+        }
+      }
+      .course-title {
+        margin:7px 10px 0;
+        font-size: $fontSizeTitle;
+        color:$mkTextColorTitle;
+      }
+      .course-title:hover {
+        color:$mkColorPrimary;
+      }
+      .course-des {
+        margin:7px 10px 0;
+        font-size: $fontSizeMinText;
+        color:$mkTextColorSubTitle;
+      }
+    }
+    .course-item:hover {
+      box-shadow: 2px 2px 10px rgba(102,102,102,0.2);
+      transform: translate(0,-2px);
+    }
+  }
+  .course-item + .course-item {
+    margin-left: 18px;
+  }
+  .course-item:nth-child(5n+1) {
+    margin-left: 0;
+  }
+}
+/* ====================课程列表 end===================== */
+
+/* ====================首页导航 start===================== */
+.home-main {
+  width: 1202px;
+  height: 480px;
+  margin:auto;
+  display: flex;
+  margin-top: 20px;
+  border-radius:6px;
+  overflow: hidden;
+  box-shadow: 0 10px  20px  rgba(102,102,102,0.2);
+  .home-nav {
+    width: 260px;
+    height: 480px;
+    background-color: #494b4c;
+    position: relative;
+    .nav-item {
+      padding-left: 16px;
+      padding-top: 23px;
+      .nav-title {
+        font-weight: bold;
+        font-size:15px;
+        color:#fff;
+        a {
+          color:#fff;
+        }
+      }
+      .nav-show {
+        overflow: hidden;
+      }
+      .nav-list {
+        margin-top: 10px;
+        width: 60px;
+        overflow: hidden;
+        color:#fff;
+        margin-right: 20px;
+        float: left;
+        white-space: nowrap;
+        color:rgba(255,255,255,0.6);
+        a {
+          color:rgba(255,255,255,0.6);
+        }
+      }
+      .nav-hover {
+        display: none;
+        .nav-title-l {
+          position: absolute;
+          height: 75px;
+          left: 0;
+          width: 260px;
+          background-color: #fff;
+          font-size: $fontSizeTitle;
+          color:$mkTextColorTitle;
+          font-weight: bold;
+          line-height:75px;
+          padding-left: 16px;
+          cursor: pointer;
+        }
+        .nav-content {
+          position: absolute;
+          top: 0;
+          right: -720px;
+          width: 720px;
+          height: 480px;
+          background-color: #fff;
+          z-index: 100;
+          overflow: hidden;
+          padding: 0 34px;
+          //display: flex;
+          //flex-wrap: wrap;
+          .n-item {
+            display: inline-block;
+            width: 300px;
+            margin-top: 34px;
+            color: $mkTextColorTitle;
+            a {
+              color: $mkTextColorTitle;
+            }
+            .nav-title {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .nav-item:hover .nav-hover {
+      display: block;
+    }
+    .nav-item:nth-child(1) .nav-title-l{
+      top: 0;
+    }
+    .nav-item:nth-child(2) .nav-title-l{
+      top: 75px;
+    }
+    .nav-item:nth-child(3) .nav-title-l{
+      top: 150px;
+    }
+    .nav-item:nth-child(4) .nav-title-l{
+      top: 225px;
+    }
+    .nav-item:nth-child(5) .nav-title-l{
+      top: 300px;
+    }
+    .nav-item:nth-child(6) .nav-title-l{
+      top: 375px;
+    }
+  }
+  .home-swiper {
+    flex:1;
+    height: 480px;
+    .c-index {
+      border-radius: 2.5px;
+      width: 24px;
+      height: 5px;
+      border:0;
+      background-color: rgba(51,51,51,0.5);
+    }
+    .active {
+      background-color: rgba(255,255,255,0.6);
+    }
+    .carousel-control {
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 18px;
+      width: 32px;
+      margin: auto;
+      background-color: #fff;
+    }
+    .left {
+      background-image: none;
+      background-color: rgba(51,51,51,0.5);
+      border-radius:0 4px 4px 0;
+    }
+    .right {
+      background-image: none;
+      background-color: rgba(51,51,51,0.5);
+      border-radius:4px 0 0 4px;
+    }
+  }
+  .home-info {
+    width: 222px;
+    height: 480px;
+    background-color: #fff;
+    .line {
+      width: 182px;
+      height: 1px;
+      background-color: #e3e7eb;
+      margin: auto;
+    }
+    .user-info {
+      height: 223px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .user-img {
+        height: 50px;
+        width: 50px;
+        border-radius:50%;
+        img {
+          width: 100%;
+        }
+      }
+      .user-name {
+        margin-top: 6px;
+      }
+      .user-button {
+        margin-top: 15px;
+        button:hover {
+          //background-color: inherit;
+        }
+      }
+    }
+    .news {
+      height: 256px;
+      padding: 30px 20px;
+      .n-title {
+        font-size:$fontSizeText;
+        font-weight: bold;
+      }
+      ul.new-box {
+        display: block;
+        list-style-type: disc;
+      }
+      .n-list{
+        margin-top: 12px;
+        position: relative;
+        padding-left: 10px;
+        a{
+          color:$mkTextColorTitle;
+          &:hover{
+            color:$mkColorPrimary;
+          }
+        }
+      }
+      .n-list:after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 2px;
+        height: 2px;
+        border-radius:50%;
+        background-color: $mkTextColorTitle;
+      }
+    }
+  }
+}
+/* ====================首页导航 end===================== */
+
+
+/* ====================产品类目 start===================== */
+.category {
+  margin-top: 60px;
+  width: 100%;
+  height: 278px;
+  background-color: rgba(108,110,112,0.08);
+  overflow: hidden;
+  .c-content{
+    width: 1203px;
+    margin:auto;
+  }
+  .c-head {
+    font-size: $fontSizeMainTitle;
+    color:$mkTextColorTitle;
+    margin-top: 30px;
+  }
+  .c-item {
+    display: inline-block;
+    width: 223px;
+    height: 144px;
+    margin-top: 35px;
+    border-radius:6px;
+    //background:url();
+    text-align: center;
+    overflow: hidden;
+    color:#fff;
+    padding:0 20px;
+    .c-title {
+      font-size:$fontSizeMainTitle;
+      margin-top: 35px;
+    }
+    .c-des {
+      font-size:$fontSizeText;
+      margin-top: 10px;
+    }
+  }
+  .c-item+.c-item {
+    margin-left: 18px;
+  }
+}
+/* ====================产品类目 end===================== */

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* ====================课程列表 start===================== */
+.mk-course {
+  width: 1202px;
+  margin: 60px auto 0; }
+  .mk-course .mk-course-head {
+    justify-content: space-between; }
+    .mk-course .mk-course-head .course-name {
+      font-size: 24px; }
+    .mk-course .mk-course-head .course-more a {
+      color: #494b4c; }
+  .mk-course .mk-course-box {
+    margin-top: 9px; }
+    .mk-course .mk-course-box .course-item {
+      margin-top: 18px;
+      width: 226px;
+      height: 236px;
+      border-radius: 6px;
+      background-color: #fff;
+      overflow: hidden; }
+      .mk-course .mk-course-box .course-item .course-img {
+        height: 127px;
+        width: 236px;
+        overflow: hidden;
+        position: relative; }
+        .mk-course .mk-course-box .course-item .course-img .saw {
+          position: absolute;
+          bottom: 3px;
+          left: 5px;
+          color: #fff; }
+      .mk-course .mk-course-box .course-item .course-title {
+        margin: 7px 10px 0;
+        font-size: 16px;
+        color: #494B4C; }
+      .mk-course .mk-course-box .course-item .course-des {
+        margin: 7px 10px 0;
+        font-size: 13px;
+        color: #939699; }
+  .mk-course .course-item + .course-item {
+    margin-left: 18px; }
+  .mk-course .course-item:nth-child(5n+1) {
+    margin-left: 0; }
+
+/* ====================课程列表 end===================== */
+
+/*# sourceMappingURL=courseCenter.css.map */
